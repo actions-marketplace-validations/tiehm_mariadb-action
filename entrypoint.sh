@@ -25,6 +25,9 @@ if [ -n "$INPUT_MYSQL_DATABASE" ]; then
   echo "Use specified database"
 
   docker_run="$docker_run -e MYSQL_DATABASE=$INPUT_MYSQL_DATABASE"
+else 
+  echo "Use unspecified database, defaulting to 'test'"
+  docker_run="$docker_run -e MYSQL_DATABASE=test"
 fi
 
 docker_run="$docker_run -d -p $INPUT_HOST_PORT:$INPUT_CONTAINER_PORT mariadb:$INPUT_MARIADB_VERSION --port=$INPUT_CONTAINER_PORT"
