@@ -1,4 +1,4 @@
-name: 'Start MariaDB'
+name: 'Start MariaDB Instance'
 description: 'Start a MariaDB database'
 author: 'tiehm'
 branding:
