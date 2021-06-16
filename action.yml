@@ -1,6 +1,6 @@
 name: 'Start MariaDB'
 description: 'Start a MariaDB database'
-author: 'getong'
+author: 'tiehm'
 branding:
   icon: 'database'
   color: 'green'
